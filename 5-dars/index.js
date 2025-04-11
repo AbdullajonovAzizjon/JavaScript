@@ -1,12 +1,8 @@
-let a = 2, 
-b = 1;
+let str1 = `Oxford`
+let str2 = `New Oxford`
+let str3 = `salomm`
 
-// if(a>b){    
-//     console.log(a,b);
-// } else{
-//     console.log(b,a);
-// }
-
-a > b ? console.log(a,b) : console.log(b,a);
-
-
+if (str1.length===6 && str1.includes(Oxford)){
+    console.log();
+    
+}
