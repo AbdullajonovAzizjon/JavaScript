@@ -28,4 +28,8 @@ let age = prompt("Siz 18 yoshdan kichikmisiz? (ha/yo'q)");
   
       if (javob === null) {
         alert("Siz hech narsa kiritmadingiz.");
+      } else {
+        javob = javob.toLowerCase(); // harflarni kichik qiladi
+        let natija = (javob === "ha") ? "chipta narxi 5000 so'm" : "chipta narxi 10000so'm.";
+        alert(natija);
       }
