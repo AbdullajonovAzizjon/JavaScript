@@ -24,3 +24,8 @@ let age = prompt("Siz 18 yoshdan kichikmisiz? (ha/yo'q)");
         alert(natija);
       }
   
+      let javob = prompt("Siz talabamisiz? (ha/yo'q)");
+  
+      if (javob === null) {
+        alert("Siz hech narsa kiritmadingiz.");
+      }
