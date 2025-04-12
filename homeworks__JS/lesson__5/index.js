@@ -19,4 +19,8 @@ let age = prompt("Siz 18 yoshdan kichikmisiz? (ha/yo'q)");
 
     if (age === null) {
       alert("Siz hech narsa kiritmadingiz.");
-    } 
+    } else {
+        let natija = (age === "ha") ? "chipta narxi 5000 so'm" : "chipta narxi 10000so'm.";
+        alert(natija);
+      }
+  
