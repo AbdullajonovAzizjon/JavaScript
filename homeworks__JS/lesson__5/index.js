@@ -1,9 +1,11 @@
-let age = 20;
-let who = `student`;
+// part-1 !!!!!!
+
+// let age = 18 ;
+// let who = `studen`;
 
 
-let chipta = (age < 18 || who===`student`) ? "Chipta narxi 5000 so'm" : "Chipta narxi 10000 so'm";
-console.log(chipta);
+// let chipta = (age < 18 || who===`student`, prompt(`yoshingizni kiriting`)) ? "Chipta narxi 5000 so'm" : "Chipta narxi 10000 so'm";
+// console.log(chipta);
 
 
 
@@ -12,3 +14,9 @@ console.log(chipta);
 // } else{
 //     console.log(`chipta narxi 10000 so'm`);
 // }
+
+let age = prompt("Siz 18 yoshdan kichikmisiz? (ha/yo'q)");
+
+    if (age === null) {
+      alert("Siz hech narsa kiritmadingiz.");
+    } 
