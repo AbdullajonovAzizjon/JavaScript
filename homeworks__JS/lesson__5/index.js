@@ -16,20 +16,26 @@
 // }
 
 let age = prompt("Siz 18 yoshdan kichikmisiz? (ha/yo'q)");
+let talaba = prompt("Siz talabamisiz? (ha/yo'q)");
 
-    if (age === null) {
-      alert("Siz hech narsa kiritmadingiz.");
+
+    if (age === "ha" || talaba === "ha") {
+        console.log("chipta narxi 5000 so'm");
+
     } else {
-        let natija = (age === "ha") ? "chipta narxi 5000 so'm" : "chipta narxi 10000so'm.";
-        alert(natija);
+        console.log("chipta narxi 10000so'm.");
       }
+    if(age === "ha" || talaba === "yo'q"){
+      console.log("chipta narxi 5000 so'm");
+    } else{
+      console.log("chipta narxi 10000so'm.");
+    }
+    if(age === "yo'q" || talaba === "ha"){
+      console.log("chipta narxi 5000 so'm");
+    } else{
+        console.log("chipta narxi 10000so'm.");
+    }
+    
   
-      let javob = prompt("Siz talabamisiz? (ha/yo'q)");
   
-      if (javob === null) {
-        alert("Siz hech narsa kiritmadingiz.");
-      } else {
-        javob = javob.toLowerCase(); // harflarni kichik qiladi
-        let natija = (javob === "ha") ? "chipta narxi 5000 so'm" : "chipta narxi 10000so'm.";
-        alert(natija);
-      }
+ 
