@@ -15,27 +15,40 @@
 //     console.log(`chipta narxi 10000 so'm`);
 // }
 
-let age = prompt("Siz 18 yoshdan kichikmisiz? (ha/yo'q)");
-let talaba = prompt("Siz talabamisiz? (ha/yo'q)");
+// let age = 14;
+// let talaba = "ha";
 
 
-    if (age === "ha" || talaba === "ha") {
-        console.log("chipta narxi 5000 so'm");
+//     if (age < Number(18) && talaba === "ha") {
+//         console.log("chipta narxi 5000 so'm");
 
-    } else {
-        console.log("chipta narxi 10000so'm.");
-      }
-    if(age === "ha" || talaba === "yo'q"){
-      console.log("chipta narxi 5000 so'm");
-    } else{
-      console.log("chipta narxi 10000so'm.");
-    }
-    if(age === "yo'q" || talaba === "ha"){
-      console.log("chipta narxi 5000 so'm");
-    } else{
-        console.log("chipta narxi 10000so'm.");
-    }
+//     } else {
+//         console.log("chipta narxi 10000so'm.");
+//       }
+//     if(age < Number(18) && talaba === "yo'q"){
+//       console.log("chipta narxi 5000 so'm");
+//     } else{
+//       console.log("chipta narxi 10000so'm.");
+//     }
+//     if(age > Number(18) && talaba === "ha"){
+//       console.log("chipta narxi 5000 so'm");
+//     } else{
+//         console.log("chipta narxi 10000so'm.");
+//     }
+
+let age = Number(prompt("Yoshingizni kiriting:"));
+let talaba = prompt("Talabamisiz? (ha/yo'q)");
+
+if (age < 18 && talaba === "ha") {
+    console.log("chipta narxi 5000 so'm");
+} else if (age < 18 && talaba === "yo'q") {
+    console.log("chipta narxi 5000 so'm");
+} else if (age > 18 && talaba === "ha") {
+    console.log("chipta narxi 5000 so'm");
+} else {
+    console.log("chipta narxi 10000 so'm");
+}
+
     
-  
   
  
