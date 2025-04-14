@@ -1,15 +1,23 @@
   // easy-logical__part
 
-let age = prompt("Yoshingizni kiriting:");
-let talaba = prompt("Talabamisiz? (ha/yo'q)");
 
-if (talaba === "ha") {
-    alert("chipta narxi 5000 so'm");
-} else if (age < 18) {
-    alert("chipta narxi 5000 so'm");
-} else {
-    alert("chipta narxi 10000 so'm");
-}
+// let age = prompt("Yoshingizni kiriting:");
+// let talaba = prompt("Talabamisiz? (ha/yo'q)");
+
+// if (talaba === "ha") {
+//     alert("chipta narxi 5000 so'm");
+// } else if (age < 18) {
+//     alert("chipta narxi 5000 so'm");
+// } else {
+//     alert("chipta narxi 10000 so'm");
+// }
+
+let age = prompt("Yoshingizni kiriting:");
+let student = prompt("Talabamisiz? (ha/yo'q)");
+
+let cost = (student === "ha" || age < 18) ? "chipta narxi 5000 so'm" : "chipta narxi 10000 so'm";
+
+alert(cost);
 
 
 
