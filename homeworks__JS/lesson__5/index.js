@@ -16,27 +16,27 @@
 
 // difficult-logical__part
 
-let tool = prompt("Mahsulotni tanlang (telefon, noutbuk, quloqchin):");
+let tool = prompt("Mahsulotni tanlang (telefon, noutbuk, quloqchin)");
 let soni =prompt("Nechta mahsulot olasiz?");
-let chegirma = prompt("Chegirma kartangiz bormi? (ha/yo'q)");
+let chegirma = prompt("Chegirma karta bormi? (ha/yo'q)");
 
 let narx;
 
 if (tool === "telefon") {
     narx = 200;
-} else if (tool === "Noutbuk") {
+} else if (tool === "noutbuk") {
     narx = 800;
 } else if (tool === "quloqchin") {
     narx = 50;
 } else {
-    alert("Bu mahsulot yo'q.");
+    alert("Bu mahsulot yo'q");
     narx = 0;
 }
 
 let hammasi = narx * soni;
 
-if (chegirma === "ha" && jami > 300) {
-    hammasi = hammasi * 0.9; // 10% chegirma
+if (chegirma === "ha" && hammasi > 300) {
+    hammasi = hammasi * 0.9;
 }
 
 alert("To'lov summasi: $" + hammasi);
