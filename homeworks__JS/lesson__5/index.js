@@ -1,35 +1,35 @@
   // easy-logical__part
 
-  let age = (prompt("Yoshingizni kiriting:"));
-  let talaba = prompt("Talabamisiz? (ha/yo'q)");
+//   let age = (prompt("Yoshingizni kiriting:"));
+//   let talaba = prompt("Talabamisiz? (ha/yo'q)");
 
-if (age < 18 || talaba === "ha") {
-    console.log("chipta narxi 5000 so'm");
-} else if (age < 18 || talaba === "yo'q") {
-    console.log("chipta narxi 5000 so'm");
-} else if (age > 18 || talaba === "ha") {
-    console.log("chipta narxi 5000 so'm");
-} else {
-    console.log("chipta narxi 10000 so'm");
-}
+// if (age < 18 || talaba === "ha") {
+//     alert("chipta narxi 5000 so'm");
+// } else if (age < 18 || talaba === "yo'q") {
+//     alert("chipta narxi 5000 so'm");
+// } else if (age > 18 || talaba === "ha") {
+//     alert("chipta narxi 5000 so'm");
+// } else if(age > 18 || talaba === "yo'q"){
+//   alert("chipta narxi 10000 so'm");
+// }
 
 
 // difficult-logical__part
 
-let mahsulot = prompt("Mahsulot turini kiriting (telefon, laptop, quloqchin):");
-let soni = Number(prompt("Nechta mahsulot olmoqchisiz?"));
+let tool = prompt("Mahsulotni tanlang (telefon, noutbuk, quloqchin):");
+let soni =prompt("Nechta mahsulot olasiz?");
 let chegirma = prompt("Chegirma kartangiz bormi? (ha/yo'q)");
 
 let narx;
 
-if (mahsulot === "telefon") {
+if (tool === "telefon") {
     narx = 200;
-} else if (mahsulot === "laptop") {
+} else if (tool === "Noutbuk") {
     narx = 800;
-} else if (mahsulot === "quloqchin") {
+} else if (tool === "quloqchin") {
     narx = 50;
 } else {
-    console.log("Noto'g'ri mahsulot turi kiritildi.");
+    alert("Bu mahsulot yo'q.");
     narx = 0;
 }
 
@@ -39,7 +39,7 @@ if (chegirma === "ha" && jami > 300) {
     hammasi = hammasi * 0.9; // 10% chegirma
 }
 
-console.log("To'lov summasi: $" + hammasi);
+alert("To'lov summasi: $" + hammasi);
 
 
 
