@@ -15,7 +15,12 @@
 
 let data = {
     name: "Phone",
-    model: "iPhone",
-    price: 700,
-    amount: 8,
+    type: "iPhone",
+    cost: 700,
+    amount: 4,
   };
+  
+  let a = (data.amount*data.cost)
+
+  console.log(data.type, a);
+  
