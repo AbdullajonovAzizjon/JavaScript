@@ -11,10 +11,9 @@ let user =  {
     } 
 }
 
-let cloneUser = {};
+let cloneUser = structuredClone(user);
+cloneUser.child.age = 45;
 
-for (key in user) {
-    child[key] = user[key]
-}
+console.log(user);
+console.log(cloneUser);
 
-console.log(child);
