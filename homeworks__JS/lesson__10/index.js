@@ -65,9 +65,16 @@ let user =  {
         name: "Toshmat",
         age:30,
         status: "Talaba",
-        func() {
+        action() {
             return this.age
         }
     } 
 }
+
+
+let cloneUser = Object.assign(user);
+cloneUser.child.action = 45;
+
+
+console.log(cloneUser);
 
