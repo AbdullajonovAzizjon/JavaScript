@@ -23,6 +23,23 @@ for ( key in obj) {
 }
 
 
+№--3
+
+let obj={
+    id:1,
+    name:"WebBrain",
+    offline:true,
+    online:true,
+    individual:false
+}
+
+for (key in obj) {
+  if (typeof obj[key] === "boolean") {
+    console.log(key + ":" + obj[key]);
+  }
+}
+
+
 
 
 
