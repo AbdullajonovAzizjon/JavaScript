@@ -77,23 +77,54 @@
 
 // №--6
 
+// let person = {
+//     id: 1,
+//     name: 'Odil',
+//     age:78,
+//     child: {
+//         id: 1,
+//         name: 'Ali',
+//         age:48,
+//         child: {
+//             id: 1,
+//             name: 'Umar',
+//             age:20
+//         }
+//     }
+// }
+
+// let a = person.ageperson.child.age + person.child.child.age;
+// console.log(a);
+
+
+// №--6
+
+
 let person = {
     id: 1,
     name: 'Odil',
-    age:78,
+    age: 78,
     child: {
         id: 1,
         name: 'Ali',
-        age:48,
+        age: 48,
         child: {
             id: 1,
             name: 'Umar',
-            age:20
+            age: 20
         }
     }
+};
+
+function ALLAges(person) {
+    let sum = person.age || 0;
+    if (person.child) {
+        sum += ALLAges(person.child);
+    }
+    return sum;
 }
 
-let a = person.ageperson.child.age + person.child.child.age;
-console.log(a);
+console.log(ALLAges(person));
+
 
 
