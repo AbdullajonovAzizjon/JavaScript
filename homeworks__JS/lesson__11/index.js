@@ -166,17 +166,46 @@
 
 // №--9
 
-obj={
-  id:1,
-  title:'the best',
-  address:{street:"Farobiy",number:'34'}
+// obj={
+//   id:1,
+//   title:'the best',
+//   address:{street:"Farobiy",number:'34'}
+// }
+
+// for(key in obj){
+//     if(typeof obj[key] === "object"){
+//         console.log(`object bor`);
+//     } else console.log(`object yo'q`);
+    
+// }
+
+
+
+
+
+
+// part---2
+
+
+function Calculator() {
+    this.read = function() {
+        this.a = +prompt("bitta son kiriting:");
+        this.b = +prompt("Ikkinchisini kiriting:");
+    };
+
+    this.sum = function() {
+        return this.a + this.b;
+    };
+
+    this.mul = function() {
+        return this.a * this.b;
+    };
 }
 
-for(key in obj){
-    if(typeof obj[key] === "object"){
-        console.log(`object bor`);
-    } else console.log(`object yo'q`);
-    
-}
+let calculator = new Calculator();
+calculator.read();
+
+alert("Yig'indisi = " + calculator.sum());
+alert("Ko'paytmasi = " + calculator.mul());
 
 
