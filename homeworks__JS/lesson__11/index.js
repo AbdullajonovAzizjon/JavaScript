@@ -130,20 +130,38 @@
 // №--7
 
 
-let obj={
-id:1,name:'Usmon',job:'developer'
+// let obj={
+// id:1,name:'Usmon',job:'developer'
+// }
+
+// let newobj = structuredClone(obj)
+// let newobj2 = structuredClone(obj)
+// newobj.name = 'eshmat';
+// newobj2.name = 'toshmat'
+
+// console.log(newobj);
+// console.log(newobj2);
+// console.log(obj);
+
+
+// №--8
+
+
+let year = +prompt("Tug'ilgan yilingizni kiriting:");
+let age = +prompt("Yoshingizni kiriting:");
+
+let obj = {
+    id: 1,
+    name: 'Usmon',
+    year: year,
+    age: age
+};
+
+if (2025 - obj.year === obj.age) {
+    console.log(`to'g'ri ma'lumot`);
+} else {
+    console.log(`xato ma'lumot`);
 }
-
-let newobj = structuredClone(obj)
-let newobj2 = structuredClone(obj)
-newobj.name = 'eshmat';
-newobj2.name = 'toshmat'
-
-console.log(newobj);
-console.log(newobj2);
-console.log(obj);
-
-
 
 
 
