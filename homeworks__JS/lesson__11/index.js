@@ -100,31 +100,50 @@
 // №--6
 
 
-let person = {
-    id: 1,
-    name: 'Odil',
-    age: 78,
-    child: {
-        id: 1,
-        name: 'Ali',
-        age: 48,
-        child: {
-            id: 1,
-            name: 'Umar',
-            age: 20
-        }
-    }
-};
+// let person = {
+//     id: 1,
+//     name: 'Odil',
+//     age: 78,
+//     child: {
+//         id: 1,
+//         name: 'Ali',
+//         age: 48,
+//         child: {
+//             id: 1,
+//             name: 'Umar',
+//             age: 20
+//         }
+//     }
+// };
 
-function ALLAges(person) {
-    let sum = person.age || 0;
-    if (person.child) {
-        sum += ALLAges(person.child);
-    }
-    return sum;
+// function ALLAges(person) {
+//     let zero = person.age || 0;
+//     if (person.child) {
+//         zero += ALLAges(person.child);
+//     }
+//     return zero;
+// }
+
+// console.log(ALLAges(person));
+
+
+// №--7
+
+
+let obj={
+id:1,name:'Usmon',job:'developer'
 }
 
-console.log(ALLAges(person));
+let newobj = structuredClone(obj)
+let newobj2 = structuredClone(obj)
+newobj.name = 'eshmat';
+newobj2.name = 'toshmat'
+
+console.log(newobj);
+console.log(newobj2);
+console.log(obj);
+
+
 
 
 
