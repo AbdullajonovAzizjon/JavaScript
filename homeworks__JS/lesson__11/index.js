@@ -147,21 +147,36 @@
 // №--8
 
 
-let year = +prompt("Tug'ilgan yilingizni kiriting:");
-let age = +prompt("Yoshingizni kiriting:");
+// let year = +prompt("Tug'ilgan yilingizni kiriting:");
+// let age = +prompt("Yoshingizni kiriting:");
 
-let obj = {
-    id: 1,
-    name: 'Usmon',
-    year: year,
-    age: age
-};
+// let obj = {
+//     id: 1,
+//     name: 'Usmon',
+//     year: year,
+//     age: age
+// };
 
-if (2025 - obj.year === obj.age) {
-    console.log(`to'g'ri ma'lumot`);
-} else {
-    console.log(`xato ma'lumot`);
+// if (2025 - obj.year === obj.age) {
+//     console.log(`to'g'ri ma'lumot`);
+// } else {
+//     console.log(`xato ma'lumot`);
+// }
+
+
+// №--9
+
+obj={
+  id:1,
+  title:'the best',
+  address:{street:"Farobiy",number:'34'}
 }
 
+for(key in obj){
+    if(typeof obj[key] === "object"){
+        console.log(`object bor`);
+    } else console.log(`object yo'q`);
+    
+}
 
 
