@@ -58,5 +58,21 @@ for (key in obj) {
 }
 
 
+№--5
+
+let obj={
+  id:1,
+  name:"atirgul",
+  color:"qizil",
+  count:10,
+  price:"10$"
+}
+
+for(key in obj){
+    if(typeof obj[key] === "string"){
+        console.log(obj[key]);
+    }
+}
+
 
 
