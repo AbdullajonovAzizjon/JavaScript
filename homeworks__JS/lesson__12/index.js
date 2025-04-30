@@ -18,7 +18,7 @@ console.log(user.getFullname());
 // part---2
 
 let ladder = {
-    step: 0,
+    step: 10,
     up() {
         this.step++;
         return this;
@@ -31,4 +31,6 @@ let ladder = {
         console.log(this.step);
         return this
     },
-}
+};
+
+ladder.up().up().down().showStep().down().showStep();
