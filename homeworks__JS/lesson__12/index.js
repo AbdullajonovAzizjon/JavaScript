@@ -12,7 +12,7 @@ let user = {
 
 console.log(user.getFullname());
 //natija undefined undefined
-// natija: arrow function parentga emas globalga qaraydi shuning uchun u yerda firstName bilan surName yoq shuning uchun undefined undefined chiqadi.. 
+// natija: arrow function parentga emas globalga qaraydi shuning uchun u yerda firstName bilan surName yoq shuning uchun undefined undefined chiqadi.
 
 
 // part---2
