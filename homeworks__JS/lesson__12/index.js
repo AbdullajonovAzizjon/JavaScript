@@ -27,4 +27,8 @@ let ladder = {
         this.step--;
         return this
     },
+    showStep() {
+        console.log(this.step);
+        return this
+    },
 }
