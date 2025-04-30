@@ -22,5 +22,9 @@ let ladder = {
     up() {
         this.step++;
         return this;
-    }
+    },
+    down() {
+        this.step--;
+        return this
+    },
 }
