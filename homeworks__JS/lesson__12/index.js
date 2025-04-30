@@ -34,3 +34,8 @@ let ladder = {
 };
 
 ladder.up().up().down().showStep().down().showStep();
+
+// natija: 11 10
+// chunki bunda this metodi qayta qayta yangilangani sababli, malumotlar ham yangilanyapti shunig uchun faqat 1 qoshilyapti va ayrilyapti 
+// ladder.up().up().down().showStep() mana shu yergacha 1 qoshilyapti va 
+//down().showStep(); va bu yerdan 1 ayrilyapti this metodi har safar yangilanyapti
