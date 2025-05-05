@@ -35,4 +35,13 @@ function truncate(str, x) {
   console.log(truncate("webbrain academy", 5));  
 
 
- 
+№--4
+
+function getCurrency(str) {
+    return Number(str.replace(/\D/g, ""));
+  }
+  
+  console.log(getCurrency("$1200"));
+
+
+  
