@@ -1,16 +1,29 @@
-part---1
+// part---1
 
-№--1
+// №--1
 
-function check(str1, str2){
-    for(let value of str2){
-        if(!str1.includes(value)) return false;
+// function check(str1, str2){
+//     for(let value of str2){
+//         if(!str1.includes(value)) return false;
+//     }
+//     return true;
+// }
+
+// console.log(check("webbrain academy", "acsa"));
+// console.log(check("webbrain academy", "webbrain"));
+
+// №--2
+
+function getCount(str) {
+    let result = {};
+    for (let char of str) {
+      if (char === " ") continue; // bo‘sh joylarni hisoblama
+      result[char] = (result[char] || 0) + 1;
     }
-    return true;
-}
-
-console.log(check("webbrain academy", "acsa"));
-console.log(check("webbrain academy", "webbrain"));
-
-
+    return result;
+  }
+  
+  console.log(getCount("webbrain")); 
+  // {w:1, e:1, b:2, r:1, a:1, i:1, n:1}
+  
 
