@@ -26,3 +26,13 @@ function getCount(str) {
   console.log(getCount("webbrain")); 
   
 
+№--3
+
+function truncate(str, x) {
+    return str.slice(0, x);
+  }
+  
+  console.log(truncate("webbrain academy", 5));  
+
+
+ 
