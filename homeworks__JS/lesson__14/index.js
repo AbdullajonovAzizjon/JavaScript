@@ -1,47 +1,25 @@
-part---1
+ // №--5
 
-№--1
+// function analyzeString(str) {
+//     let result = { letter: 0, char: 0, numbers: 0 };
+//     for (let ch of str) {
+//       if (/[a-zA-Z]/.test(ch)) result.letter++;
+//       else if (/[0-9]/.test(ch)) result.numbers++;
+//       else result.char++;
+//     }
+//     return result;
+//   }
+  
+//   console.log(analyzeString("webbr@!n_2022"));
+  
 
-function check(str1, str2){
-    for(let value of str2){
-        if(!str1.includes(value)) return false;
-    }
-    return true;
-}
+// №--6
 
-console.log(check("webbrain academy", "acsa"));
-console.log(check("webbrain academy", "webbrain"));
-
-  №--2
-
-function getCount(str) {
-    let result = {};
-    for (let value of str) {
-      if (value === " ") continue;
-      result[value] = (result[value] || 0) + 1;
-    }
-    return result;
+function capitilize(str) {
+    return str
+      .split(" ")
+      .map(word => word[0].toUpperCase() + word.slice(1).toLowerCase())
+      .join(" ");
   }
   
-  console.log(getCount("webbrain")); 
-  
-
-№--3
-
-function truncate(str, x) {
-    return str.slice(0, x);
-  }
-  
-  console.log(truncate("webbrain academy", 5));  
-
-
-№--4
-
-function getCurrency(str) {
-    return Number(str.replace(/\D/g, ""));
-  }
-  
-  console.log(getCurrency("$1200"));
-
-
-  
+  console.log(capitilize("webbrain academy"));  
