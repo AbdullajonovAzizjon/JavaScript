@@ -14,16 +14,23 @@
 
 // №--2
 
-function getCount(str) {
-    let result = {};
-    for (let char of str) {
-      if (char === " ") continue; // bo‘sh joylarni hisoblama
-      result[char] = (result[char] || 0) + 1;
-    }
-    return result;
-  }
+// function getCount(str) {
+//     let result = {};
+//     for (let char of str) {
+//       if (char === " ") continue; // bo‘sh joylarni hisoblama
+//       result[char] = (result[char] || 0) + 1;
+//     }
+//     return result;
+//   }
   
-  console.log(getCount("webbrain")); 
-  // {w:1, e:1, b:2, r:1, a:1, i:1, n:1}
+//   console.log(getCount("webbrain")); 
+//   // {w:1, e:1, b:2, r:1, a:1, i:1, n:1}
   
 
+// №--3
+
+function truncate(str, n) {
+    return str.slice(0, n);
+  }
+  
+  console.log(truncate("webbrain academy", 5));  
