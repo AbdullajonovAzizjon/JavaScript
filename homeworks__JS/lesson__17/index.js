@@ -55,7 +55,15 @@
 // №---4
 
 
+function sumInput() {
+    let num = [];
 
+    for (true){
+        let prompt = prompt("Son kiriting");
 
+        if(prompt === "" || prompt === null) break;
+        if(prompt === 0) continue;
+    }
+}
 
 
