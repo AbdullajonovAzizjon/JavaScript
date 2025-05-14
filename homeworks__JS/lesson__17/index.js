@@ -53,13 +53,13 @@
 
 
 // №---4
+let prompt = prompt("Son kiriting");
 
 
 function sumInput() {
     let num = [];
 
-    for (true){
-        let prompt = prompt("Son kiriting");
+    while(true){
 
         if(prompt === "" || prompt === null) break;
         if(prompt === 0) continue;
@@ -80,7 +80,6 @@ function sumInput() {
 }
 
 let summed__up = sumInput();
-console.log(alert(summed__up));
-;
+alert(summed__up);
 
 
