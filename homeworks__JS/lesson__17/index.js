@@ -63,7 +63,24 @@ function sumInput() {
 
         if(prompt === "" || prompt === null) break;
         if(prompt === 0) continue;
+        if(!(prompt === Number)) break;
+
+        let number = Number(prompt);
+
+        All.push(number);
     }
+
+    let summ = 0;
+
+    for (let num of numbers){
+        summ += num
+    }
+
+    return summ
 }
+
+let summed__up = sumInput();
+console.log(alert(summed__up));
+;
 
 
