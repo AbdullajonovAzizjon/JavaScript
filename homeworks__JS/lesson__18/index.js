@@ -4,5 +4,11 @@ let students = [
     {id: 3, name:"Ozod", age: 21},
 ];
   
+const person = students.find(s => s.name === "Sardor");
+console.log(person);
 
+const aboutage = [...students].sort((a, b) => a.age - b.age);
+console.log(aboutage);
 
+const byName = [...students].sort((a, b) => a.name.localeCompare(b.name));
+console.log(byName);
