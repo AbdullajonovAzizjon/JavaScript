@@ -12,3 +12,6 @@ console.log(aboutage);
 
 const byName = [...students].sort((a, b) => a.name.localeCompare(b.name));
 console.log(byName);
+
+const byId = [...students].sort((a, b) => a.id - b.id);
+console.log(byId);
