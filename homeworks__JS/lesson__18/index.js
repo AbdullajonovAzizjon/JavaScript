@@ -29,3 +29,8 @@ console.log(mixed);
 
 let b = mixed.sort((arr1, arr2) => arr1 - arr2);
 console.log(b);
+
+let odd = mixed.filter(num => num % 2)
+console.log(odd);
+let even = mixed.filter(num => !(num % 2))
+console.log(even);
