@@ -34,3 +34,9 @@ let odd = mixed.filter(num => num % 2)
 console.log(odd);
 let even = mixed.filter(num => !(num % 2))
 console.log(even);
+
+let summ = even.reduce((acc, num) => acc + num, 0);
+console.log(summ);
+
+let middle = summ / 2;
+console.log(middle);
