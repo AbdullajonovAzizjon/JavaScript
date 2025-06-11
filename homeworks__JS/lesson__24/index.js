@@ -26,8 +26,6 @@
 
 // console.log(newArr);
 
-
-
 // 2
 
 
@@ -52,9 +50,20 @@
 
 // console.log(arr);
 
-// 3
+// ---------------------------------------------------------------------------------------------------
 
-let arr = ["Olcha", "Anor", "Uzum", "Bexi"];
 
-let newArr = arr.sort((a, b) => a.localeCompare(b));
-console.log(newArr);
+
+
+function fib(n) {
+    if (n === 0) {
+      return 0;
+    } else if (n === 1) {
+      return 1;
+    } else {
+      return fib(n - 1) + fib(n - 2);
+    }
+  }
+  
+  console.log(fib(50));
+  
