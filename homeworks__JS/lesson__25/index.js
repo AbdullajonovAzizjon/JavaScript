@@ -51,19 +51,19 @@
 //     }, i * 1000);
 //   }
   
-// №---6
+№---6
 
-// let count = 0;
+let count = 0;
 
-// function sayHello() {
-//   if (count < 5) {
-//     console.log("Hello");
-//     count++;
-//     setTimeout(sayHello, 2000); 
-//   }
-// }
+function sayHello() {
+  if (count < 5) {
+    console.log("Hello");
+    count++;
+    setTimeout(sayHello, 2000); 
+  }
+}
 
-// sayHello();
+sayHello();
 
 
 №---7
