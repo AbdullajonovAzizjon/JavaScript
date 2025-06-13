@@ -32,16 +32,16 @@
 
 // console.log(calc(5));
 
-// №---4
+№---4
 
-// let calcPower = function power(a, b) {
-//     if (b === 0) {
-//         return 1;
-//     } else {
-//         return a * power(a, b - 1);
-//     }
-// };
-// console.log(calcPower(10, 100));
+let calcPower = function power(a, b) {
+    if (b === 0) {
+        return 1;
+    } else {
+        return a * power(a, b - 1);
+    }
+};
+console.log(calcPower(10, 100));
 
 
 №---5
