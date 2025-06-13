@@ -1,12 +1,12 @@
-// №---1
+№---1
 
-// (function(a) {
-//     if (a === 20252025) {
-//         console.log("Xush kelibsiz");
-//     } else {
-//         console.log("Parol xato, qaytadan kiritib ko'ring");
-//     }
-// })(prompt("Parolni kiriting:"));
+(function(a) {
+    if (a === 20252025) {
+        console.log("Xush kelibsiz");
+    } else {
+        console.log("Parol xato, qaytadan kiritib ko'ring");
+    }
+})(prompt("Parolni kiriting:"));
 
 
 №---2
