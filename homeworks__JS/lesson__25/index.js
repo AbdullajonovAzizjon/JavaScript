@@ -136,17 +136,23 @@
 //   }, 3000);
   
 // №---4
-let count = 0;
+// let count = 0;
 
-let interval = setInterval(() => {
-  console.log("Ishlamoqda...");
-  count++;
+// let interval = setInterval(() => {
+//   console.log("Ishlamoqda...");
+//   count++;
 
-  if (count === 5) {
-    clearInterval(interval);
-    console.log("Tugadi");
-  }
-}, 2000);
+//   if (count === 5) {
+//     clearInterval(interval);
+//     console.log("Tugadi");
+//   }
+// }, 2000);
 
 
 // №---5
+let count = 0;
+
+let interval = setInterval(() => {
+  count++;
+  console.log("Hisob:", count);
+}, 1000);
