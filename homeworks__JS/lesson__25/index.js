@@ -82,14 +82,14 @@
 // showFruit();
 
 
-// №---8
+№---8
 
-// setTimeout(() => {
-//     console.log("Xush kelibsiz!");
-//   }, 3000);
+setTimeout(() => {
+    console.log("Xush kelibsiz!");
+  }, 3000);
   
 
-// №---9
+№---9
 
 let errorTimeout = setTimeout(() => {
     console.log("Xatolik!");
