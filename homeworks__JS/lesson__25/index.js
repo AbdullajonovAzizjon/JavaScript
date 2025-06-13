@@ -9,16 +9,16 @@
 // })(prompt("Parolni kiriting:"));
 
 
-// №---2
+№---2
 
-// let countUp = (function () {
-//     let counter = 0;
-//     return function () {
-//         console.log(++counter);
-//     };
-// })();
+let countUp = (function () {
+    let counter = 0;
+    return function () {
+        console.log(++counter);
+    };
+})();
 
-// countUp();
+countUp();
 
 №---3
 
