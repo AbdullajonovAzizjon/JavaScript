@@ -66,20 +66,20 @@
 // sayHello();
 
 
-// №---7
+№---7
 
-// let fruits = ["olma", "banan", "nok", "gilos"];
-// let i = 0;
+let fruits = ["olma", "banan", "nok", "gilos"];
+let i = 0;
 
-// function showFruit() {
-//   if (i < fruits.length) {
-//     console.log(fruits[i]);
-//     i++;
-//     setTimeout(showFruit, 2000);
-//   }
-// }
+function showFruit() {
+  if (i < fruits.length) {
+    console.log(fruits[i]);
+    i++;
+    setTimeout(showFruit, 2000);
+  }
+}
 
-// showFruit();
+showFruit();
 
 
 №---8
