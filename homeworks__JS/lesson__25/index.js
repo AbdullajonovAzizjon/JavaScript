@@ -103,14 +103,50 @@
 
 // ------------------------------------------------------------------
 
-let number = 5;
+
+// №---1
+// let number = 5;
+
+// let interval = setInterval(() => {
+//   console.log(number);
+//   number--;
+
+//   if (number < 0) {
+//     clearInterval(interval);
+//     console.log("Tayyor!");
+//   }
+// }, 1000);
+
+// №---2
+// setInterval(() => {
+//     let now = new Date();
+//     let time = now.toLocaleTimeString();
+//     console.log("Vaqt:", time);
+//   }, 1000);
+  
+// №---3
+// let id = setInterval(() => {
+//     let r = Math.random();
+//     console.log("Random:", r);
+  
+//     if (r < 0.5) {
+//       clearInterval(id);
+//       console.log("To‘xtadi");
+//     }
+//   }, 3000);
+  
+// №---4
+let count = 0;
 
 let interval = setInterval(() => {
-  console.log(number);
-  number--;
+  console.log("Ishlamoqda...");
+  count++;
 
-  if (number < 0) {
+  if (count === 5) {
     clearInterval(interval);
-    console.log("Tayyor!");
+    console.log("Tugadi");
   }
-}, 1000);
+}, 2000);
+
+
+// №---5
