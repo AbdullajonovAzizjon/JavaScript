@@ -18,3 +18,26 @@ info.call({ role: "teacher" }, "Nodir");
 
 // 5
 info.call({ role: "adminsrator" }, "Dilshod");
+
+// --------------------------------------------------------------------
+
+function greet(name, age) {
+  console.log(`Salom, ${name}. Siz ${age} yoshdasiz. Men ${this.who}.`);
+}
+
+const bot = { who: "dosting" };
+
+// 1
+greet.apply(bot, ["Azizjon", 16]);
+
+// 2
+greet.apply({ who: "Bot" }, ["Ali", 20]);
+
+// 3
+greet.apply({ who: "AI Assistant" }, ["Lola", 25]);
+
+// 4
+greet.apply({ who: "support teacher" }, ["Nodira", 18]);
+
+// 5
+greet.apply({ who: "web developer" }, ["Jasur", 30]);
